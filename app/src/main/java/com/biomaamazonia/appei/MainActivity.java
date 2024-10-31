@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
         Button mapaButton = findViewById(R.id.buttonMapa);
         Button faunaFloraButton = findViewById(R.id.buttonFaunaFlora);
         Button quizButton = findViewById(R.id.buttonQuiz);
+        Button importanciaAmazoniaButton = findViewById(R.id.buttonImportanciaAmazonia);
+        Button sustentabilidadeButton = findViewById(R.id.buttonSustentabilidade);
 
-        // Navegação para a tela de Mapa
         mapaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Navegação para a tela de Fauna e Flora
         faunaFloraButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,11 +35,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Navegação para a tela de Quiz
         quizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        importanciaAmazoniaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ImportanciaAmazoniaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sustentabilidadeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SustentabilidadeActivity.class);
                 startActivity(intent);
             }
         });

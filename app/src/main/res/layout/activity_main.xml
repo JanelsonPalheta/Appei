@@ -23,4 +23,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quiz Educativo" />
+
+    <Button
+        android:id="@+id/buttonImportanciaAmazonia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importância da Amazônia" />
+
+    <Button
+        android:id="@+id/buttonSustentabilidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sustentabilidade" />
 </LinearLayout>
