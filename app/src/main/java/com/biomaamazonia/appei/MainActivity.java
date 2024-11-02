@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // Configurar saudação e versão
         View headerView = navigationView.getHeaderView(0);
         TextView welcomeText = headerView.findViewById(R.id.welcomeText);
-        welcomeText.setText("Bem-vindo, [Nome do Usuário]");
+        welcomeText.setText("Bem-vindo, [Nome do Usuário]");// precisa adicionar o nome do Usuário pelo fire base
 
         // Definir ações dos botões
         headerView.findViewById(R.id.buttonMapa).setOnClickListener(v -> {
